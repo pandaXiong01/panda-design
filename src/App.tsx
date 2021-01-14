@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Button type="button" size='sm' btnType='danger'>按钮</Button>
+        <Button type="button" size='lg' btnType='danger' style={{marginTop:'10px'}}>按钮</Button>
       </header>
     </div>
   );
