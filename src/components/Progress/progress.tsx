@@ -18,10 +18,10 @@ const Progress: FC<ProgressProps> = (props) => {
     theme,
   } = props
   return (
-    <div className="viking-progress-bar" style={styles}>
-      <div className="viking-progress-bar-outer" style={{ height: `${strokeHeight}px`}}>
+    <div className="panda-progress-bar" style={styles}>
+      <div className="panda-progress-bar-outer" style={{ height: `${strokeHeight}px`}}>
         <div 
-          className={`viking-progress-bar-inner color-${theme}`}
+          className={`panda-progress-bar-inner color-${theme}`}
           style={{width: `${percent}%`}}
         >
           {showText && <span className="inner-text">{`${percent}%`}</span>}
