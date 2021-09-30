@@ -1,18 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from './components/Button'
-import Form from './components/Form/Form'
 
 import './styles/index.scss'
 import './App.css';
 
 function App() {
+  const [count, setCount] = useState(0)
   return (
     <div className="App">
-      <header className="App-header">
-        <Form/>
-        <Button type="button" size='sm' btnType='danger'>按钮</Button>
-        <Button type="button" size='lg' btnType='danger' style={{marginTop:'10px'}}>按钮</Button>
-      </header>
+      <h1>panda-design</h1>
+      <div>
+        <p>{count}</p>
+        <Button 
+          type="button" 
+          size='sm' 
+          btnType='danger'
+          onClick={()=>setCount(c=>c+1)}
+          >Add</Button>
+      </div>
+
     </div>
   );
 }
